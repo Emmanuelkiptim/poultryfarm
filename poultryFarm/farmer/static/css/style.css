@@ -1,0 +1,83 @@
+h1{
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 3px;
+    background-color: #ced4db;
+    color: #333333;
+    padding: 10px 0;
+    text-align: center;
+
+}
+h2{
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-weight: 3px;
+    color: #333333;
+}  
+        
+div#value{
+    background-color: aqua;
+    border-radius: 100%;
+    position: relative;
+    
+}
+div#rating{
+    background-color: #ced4db;
+}
+button{
+    background-color: #17ce2c;
+    color: black;
+    border-radius: 70%;
+    
+}
+.container{
+    background-color: #ced4db;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 3px;
+    background-color: #ced4db;
+    color: #333333;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    font-family: 'Mali',cursive;
+    background:  #ced4db;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #333333;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.container {
+    padding: 10px;
+}
+footer {
+    background: #ced4db;
+    color:  #333333;
+    text-align: center;
+    padding: 10px 0;
+  
+    width: 100%;
+}
+#formId{
+    text-align: center;
+    position: relative;
+    margin: 15px;
+}
+

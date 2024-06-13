@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kukumzima</title>
+        <!-- style -->
+         {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- bootstrap -->
+         <link 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+            rel="stylesheet">
+    
+        <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header>
+            <h2>Sign Up <small>Farmer</small></h2>
+        </header>
+        <main>
+            <div id="formId">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <label for="farmerUsername">Username:</label>
+                    <input type="text" id="username" name="farmerUsername" required><br>
+            
+                    <label for="farmerNumber">Phone number:</label>
+                    <input type="number" id="farmerNumber" name="farmerNumber" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="fpassword" required><br>
+            
+                    <label for="farmerAddress">Address:</label>
+                    <input type="text" id="farmerAddress" name="farmerAddress" required><br>
+    
+                    <button type="submit"value="Sign Up" >SIGN UP</button>
+    
+                </form>
+                <p>Already have an account? <a href="{% url 'farmerlogin.html' %}">Log in</a></p>
+            </div>
+
+        </main>
+        <footer>
+            <p>&copy; 2024 Kukumzima. All rights reserved.</p>
+            <!-- bootstrap -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

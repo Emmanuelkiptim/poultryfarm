@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kukumzima</title>
+        <!-- style -->
+         {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- bootstrap -->
+         <link 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+            rel="stylesheet">
+    
+        <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2>Login <small>farmer</small></h2>
+        </header>
+        <div id="formId">
+            <main>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <label for="lfusername">Username:</label>
+                    <input type="text" id="lfpassword" name="lfusername" required><br><br>
+                    
+                    <label for="lfpassword">Password:</label>
+                    <input type="password" id="password" name="lfpassword" required><br><br>
+
+                    <button type="submit">LOG IN</button> <br>
+                </form>
+                
+                <p>Don't have an account ? <a href="{% url 'farmerSignup.html' %}">Sign up</a></p>
+            </main>
+        </div>
+        <footer>
+            <p>&copy; 2024 Kukumzima. All rights reserved.</p>
+            <!-- bootstrap -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 3px;
+    background-color: #ced4db;
+    color: #333333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 3px;
+    background-color: #ced4db;
+    color: #333333;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:#333333;
+}
+
+main {
+    padding: 20px;
+}
+.farmer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ced4db;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    margin: 15px;
+}
+button{
+    background-color: #17ce2c;
+    color: black;
+    border-radius: 70%;
+    align-items: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    background-color:#ced4db;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+}
+.orderForm{
+    background-color:#ced4db;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.farmer-details{
+    text-align: center;
+    margin: 15px;
+}
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 5px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: #ced4db;
+}
+.table-section th, .table-section td {
+    border: 2px solid black;
+    padding: 8px;
+    
+}
+
+

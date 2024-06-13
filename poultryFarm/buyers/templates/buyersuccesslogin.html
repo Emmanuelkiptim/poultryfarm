@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukumzima</title>
+    <!-- style -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- bootstrap -->
+     <link 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KUKUMZIMA
+                <small>(customers)</small>
+            </h1>
+            <nav>
+                <a href="{% url 'orderHistory' %}">Order History</a>
+                <a href="{% url 'makeOrder' %}">Make Order</a>
+            </nav>
+        </header> 
+        <main>
+            <section class="farmerslist">
+                <h2>Farmers</h2>
+                <div class="farmer-card">
+                    <div class="farmer-info">
+                        <p><strong>Farmer:</strong> Edward Kariuki</p>
+                        <p><strong>Price:</strong> 620 Ksh</p>
+                        <p><strong>Location:</strong> Kisumu</p>
+                        <p><strong>Stock:</strong> 1500</p>
+                    </div>
+                    <button>ORDER</button>
+                </div>
+                <div class="farmer-card">
+                    <div class="farmer-info">
+                        <p><strong>Farmer:</strong> Alice Mwangi</p>
+                        <p><strong>Price:</strong> 650 Ksh</p>
+                        <p><strong>Location:</strong> Nairobi</p>
+                        <p><strong>Stock:</strong> 1200</p>
+                    </div>
+                    <button>ORDER</button>
+                </div>
+                <div class="farmer-card">
+                    <div class="farmer-info">
+                        <p><strong>Farmer:</strong> Samuel Kariuki</p>
+                        <p><strong>Price:</strong> 600 Ksh</p>
+                        <p><strong>Location:</strong> Nakuru</p>
+                        <p><strong>Stock:</strong> 1700</p>
+                    </div>
+                    <button>ORDER</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kukumzima. All rights reserved.</p>
+        <!-- bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </footer>
+</body>
+</html>

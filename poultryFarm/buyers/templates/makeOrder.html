@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kukumzima</title>
+        <!-- style -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- bootstrap -->
+         <link 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+            rel="stylesheet">
+    
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h4>Kuku Mzima <small>(Customer Make Order)</small></h4>
+        </header>
+        <main>
+            <section class="farmer-details" id="farmer-details">
+                <h5>Farmer: Kamau Wambua</h5>
+                <p><strong>Location:</strong> Eldoret</p>
+                <p><strong>Price:</strong> 400</p>
+                <p><strong>Stock:</strong> 321 Trays</p>
+            </section>
+            <section class="orderForm" id="orderForm">
+                <h3>Place Order</h3>
+                <form>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                    <br>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                    <br>
+                    <label for="total-price">Total Price</label>
+                    <input type="text" id="total-price" name="total-price" required>
+                    <br>
+                    <br>
+                    <button>CONFIRM</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
